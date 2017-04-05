@@ -21,6 +21,12 @@ freely, subject to the following restrictions:
    distribution.
 */
 
+/*
+This is an altered version of the original software.
+To get an original copy of the software, please visit:
+https://github.com/progschj/ThreadPool
+*/
+
 #ifndef THREAD_POOL_HPP
 #define THREAD_POOL_HPP
 
