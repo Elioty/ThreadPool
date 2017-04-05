@@ -78,11 +78,13 @@ public:
     ThreadPool(ThreadPool&&) = delete;
     ThreadPool& operator=(ThreadPool&&) = delete;
     // number of workers
-    size_t size() const{
+    size_t size() const
+    {
         return this->workers.size();
     }
     // current number of tasks in queue
-    size_t pending(){
+    size_t pending()
+    {
         std::unique_lock<std::mutex> lock(this->queue_mutex);
         return this->tasks.size();
     }
